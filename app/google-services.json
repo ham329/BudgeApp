@@ -1,0 +1,45 @@
+{
+  "project_info": {
+    "project_number": "626490766660",
+    "firebase_url": "https://my-project-1481267847559.firebaseio.com",
+    "project_id": "my-project-1481267847559",
+    "storage_bucket": "my-project-1481267847559.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:626490766660:android:fe53a46c5894e367",
+        "android_client_info": {
+          "package_name": "com.example.aaron.budgeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "626490766660-1fdn4igjrajo5lhsjm6tjsdka49n1s4v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQnL3B7BzWvC6I33IfyzM3Q1eFO-goeeo"
+        },
+        {
+          "current_key": "AIzaSyDQnL3B7BzWvC6I33IfyzM3Q1eFO-goeeo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
