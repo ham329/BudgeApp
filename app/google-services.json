@@ -15,14 +15,19 @@
       },
       "oauth_client": [
         {
+          "client_id": "626490766660-sgg8ds8oc8vffka9fl7oeibln4o28ohb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.aaron.budgeapp",
+            "certificate_hash": "6fb185156ecff27f66e4804ab3fb594a1d88c9ec"
+          }
+        },
+        {
           "client_id": "626490766660-1fdn4igjrajo5lhsjm6tjsdka49n1s4v.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
-        {
-          "current_key": "AIzaSyDQnL3B7BzWvC6I33IfyzM3Q1eFO-goeeo"
-        },
         {
           "current_key": "AIzaSyDQnL3B7BzWvC6I33IfyzM3Q1eFO-goeeo"
         }
@@ -32,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "626490766660-1fdn4igjrajo5lhsjm6tjsdka49n1s4v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2

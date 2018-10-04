@@ -11,7 +11,7 @@ import android.widget.EditText;
 public class Login extends AppCompatActivity {
 
     private Button button;
-
+    //private StorageReference mStorageRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +27,7 @@ public class Login extends AppCompatActivity {
             }
         });
 
-
+        //mStorageRef = FirebaseStorage.getInstance().getReference();
     }
 
     public void startMainActivity() {
