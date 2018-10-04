@@ -21,7 +21,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Stats" />
+        <activity android:name=".Records" />
+        <activity android:name=".Notif"></activity>
     </application>
 
 </manifest>
