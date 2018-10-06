@@ -23,14 +23,14 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        Name = (EditText)findViewById(R.id.etName);
-        Password = (EditText)findViewById(R.id.etPassword);
+        Name = findViewById(R.id.etName);
+        Password = findViewById(R.id.etPassword);
         //mAuth = FirebaseAuth.getInstance();
 
 
 
         //login button
-        button = (Button)findViewById(R.id.btnLogin);
+        button = findViewById(R.id.btnLogin);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
