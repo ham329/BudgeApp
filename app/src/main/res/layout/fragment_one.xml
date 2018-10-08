@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#0288D1"
+    android:background="#77C2F8"
     android:layout_height="match_parent">
 
     <TextView
@@ -84,7 +84,7 @@
         android:layout_marginEnd="47dp"
         android:layout_marginRight="47dp"
         android:layout_marginBottom="262dp"
-        android:background="#0288D1"
+        android:background="#77C2F8"
         app:srcCompat="@android:drawable/ic_menu_save" />
 
     <EditText
