@@ -54,7 +54,7 @@ public class LoginActivity extends AppCompatActivity {
             startMainActivity();
         }
         else {
-            button.setEnabled(false);
+            //button.setEnabled(false);
         }
 
     }

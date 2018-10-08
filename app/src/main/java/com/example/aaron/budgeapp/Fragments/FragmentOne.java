@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 import com.example.aaron.budgeapp.MainActivity;
@@ -34,6 +35,7 @@ public class FragmentOne extends Fragment {
                              Bundle savedInstanceState) {
 
         // Inflate the layout for this fragment
+
         return inflater.inflate(R.layout.fragment_one, container, false);
 
 
