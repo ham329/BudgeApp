@@ -22,7 +22,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".TextRecognitionActivity"></activity>
+        <activity android:name=".TextRecognitionActivity" />
+        <activity android:name=".ProfileActivity"></activity>
     </application>
 
 </manifest>
