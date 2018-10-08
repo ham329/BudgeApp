@@ -7,12 +7,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class LoginActivity extends AppCompatActivity {
     private Button button;
     private EditText Name;
     private EditText Password;
     private ProgressDialog progressDialog;
+    private TextView alert;
+
+    private boolean wrongPW = false;
+
+
+
+
+
     //private FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,11 +47,27 @@ public class LoginActivity extends AppCompatActivity {
     private void validate(String userName, String userPassword){
         if((userName.equals("admin"))&& userPassword.equals("12345")){
             startMainActivity();
+            wrongPW = false;
+            wrongPassword(wrongPW);
         }
         else {
-            button.setEnabled(false);
+            //button.setEnabled(false);
+            wrongPW = true;
+            wrongPassword(wrongPW);
+
+
         }
     }
+    private void wrongPassword(boolean b){
+        alert = (TextView)findViewById(R.id.wrong_pw);
+
+        if(b) alert.setVisibility(View.VISIBLE);
+        else{
+            alert.setVisibility(View.INVISIBLE);
+        }
+
+    }
+
     /*
      *
      * Firebase authentication
