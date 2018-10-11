@@ -36,7 +36,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private ProgressDialog progressDialog;
 
     private FirebaseAuth mAuth;
-
     private GoogleSignInClient googleSignIn;
     private TextView status;
     private TextView detail;
@@ -49,7 +48,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         // Views
         Name = findViewById(R.id.etName);
         Password = findViewById(R.id.etPassword);
-        status = (TextView)findViewById(R.id.);
+        status = (TextView)findViewById(R.id.status);
         detail = (TextView)findViewById(R.id.detail);
 
         // Buttons
@@ -164,6 +163,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             revokeAccess();
         }
     }
+
+    // TEST
 
 //    public void startMainActivity() {
 //        Intent intent = (new Intent(this,MainActivity.class));
