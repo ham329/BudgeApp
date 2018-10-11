@@ -21,91 +21,66 @@ import com.example.aaron.budgeapp.Fragments.FragmentTwo;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
 
-
-    private TextView textView;
-    private ImageView imageView;
-
-    private Button btnOCR;
-    private ImageButton btnP;
-
-
+public class SettingActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_setting);
 
-        ImageButton home = (ImageButton) findViewById(R.id.home);
-        ImageButton stats = (ImageButton) findViewById(R.id.stats);
-        ImageButton rec = (ImageButton) findViewById(R.id.rec);
-        ImageButton cam = (ImageButton) findViewById(R.id.cam);
-        ImageButton notif = (ImageButton) findViewById(R.id.notif);
-        ImageButton setting = (ImageButton) findViewById(R.id.setting);
 
-        home.setOnClickListener(new View.OnClickListener() {
+        ImageButton home5 = (ImageButton) findViewById(R.id.home5);
+        ImageButton stats5 = (ImageButton) findViewById(R.id.stats5);
+        ImageButton rec5 = (ImageButton) findViewById(R.id.rec5);
+        ImageButton cam5 = (ImageButton) findViewById(R.id.cam5);
+        ImageButton notif5 = (ImageButton) findViewById(R.id.notif5);
+        ImageButton setting5 = (ImageButton) findViewById(R.id.setting5);
+
+        home5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openHome();
             }
         });
 
-        stats.setOnClickListener(new View.OnClickListener() {
+        stats5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openStats();
             }
         });
 
-        rec.setOnClickListener(new View.OnClickListener() {
+        rec5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openRec();
             }
         });
 
-        notif.setOnClickListener(new View.OnClickListener() {
+        notif5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openNotif();
             }
         });
 
-        cam.setOnClickListener(new View.OnClickListener() {
+        cam5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startTextRecognitionActivity();
             }
         });
 
-        setting.setOnClickListener(new View.OnClickListener() {
+        setting5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openSetting();
             }
         });
 
-        btnP = findViewById(R.id.btnProfile);
-        btnP.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-
-
-        btnOCR = findViewById(R.id.btnOCR);
-        btnOCR.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startTextRecognitionActivity();
-
-            }
-        });
-
-        btnP = findViewById(R.id.btnProfile);
-        btnP.setOnClickListener(new View.OnClickListener() {
+        ImageButton btnP5 = (ImageButton) findViewById(R.id.btnProfile5);
+        btnP5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startProfileActivity();
@@ -114,18 +89,19 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
     }
+
     public void startTextRecognitionActivity() {
-        Intent intent = new Intent(MainActivity.this, TextRecognitionActivity.class);
+        Intent intent = new Intent(this, TextRecognitionActivity.class);
         startActivity(intent);
 
     }
 
     public void startProfileActivity(){
-        Intent intent = new Intent(MainActivity.this,ProfileActivity.class);
+        Intent intent = new Intent(this,ProfileActivity.class);
         startActivity(intent);
     }
+
 
     public void openHome(){
         Intent intent = new Intent (this, MainActivity.class);
@@ -151,5 +127,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent (this, SettingActivity.class);
         startActivity(intent);
     }
+
+
+
+
 
 }

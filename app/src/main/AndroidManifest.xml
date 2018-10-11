@@ -24,7 +24,11 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".TextRecognitionActivity" />
         <activity android:name=".ProfileActivity" />
-        <activity android:name=".Nav_Temp"></activity>
+        <activity android:name=".Nav_Temp" />
+        <activity android:name=".StatsActivity" />
+        <activity android:name=".RecordsActivity" />
+        <activity android:name=".NotifcationActivity" />
+        <activity android:name=".SettingActivity"></activity>
     </application>
 
 </manifest>
