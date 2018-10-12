@@ -87,11 +87,11 @@ public class LoginActivity extends AppCompatActivity {
 
 
     /*
-    *
-    * Firebase authentication
-    *
-    *
-    */
+     *
+     * Firebase authentication
+     *
+     *
+     */
 /*
     private void validate(String userName, String userPassword) {
 
