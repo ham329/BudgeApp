@@ -31,8 +31,6 @@ public class SettingActivity extends AppCompatActivity {
 
 
         ImageButton home5 = (ImageButton) findViewById(R.id.home5);
-        ImageButton stats5 = (ImageButton) findViewById(R.id.stats5);
-        ImageButton rec5 = (ImageButton) findViewById(R.id.rec5);
         ImageButton cam5 = (ImageButton) findViewById(R.id.cam5);
         ImageButton notif5 = (ImageButton) findViewById(R.id.notif5);
         ImageButton setting5 = (ImageButton) findViewById(R.id.setting5);
@@ -41,20 +39,6 @@ public class SettingActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 openHome();
-            }
-        });
-
-        stats5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openStats();
-            }
-        });
-
-        rec5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openRec();
             }
         });
 
@@ -108,15 +92,6 @@ public class SettingActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void openStats(){
-        Intent intent = new Intent (this, StatsActivity.class);
-        startActivity(intent);
-    }
-
-    public void openRec(){
-        Intent intent = new Intent (this, RecordsActivity.class);
-        startActivity(intent);
-    }
 
     public void openNotif(){
         Intent intent = new Intent (this, NotifcationActivity.class);

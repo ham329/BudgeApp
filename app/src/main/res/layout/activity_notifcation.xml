@@ -7,24 +7,6 @@
     tools:context=".NotifcationActivity">
 
     <ImageButton
-        android:id="@+id/rec4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.67"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.99"
-        app:srcCompat="@drawable/ic_folder_open_black_24dp" />
-
-    <ImageButton
         android:id="@+id/notif4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -77,24 +59,6 @@
         app:srcCompat="@drawable/ic_home_black_24dp" />
 
     <ImageButton
-        android:id="@+id/stats4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.33"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.99"
-        app:srcCompat="@drawable/ic_multiline_chart_black_24dp" />
-
-    <ImageButton
         android:id="@+id/cam4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -128,4 +92,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.99"
         app:srcCompat="@drawable/ic_settings_black_24dp" />
+
 </android.support.constraint.ConstraintLayout>

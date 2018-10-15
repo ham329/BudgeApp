@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView textView;
     private ImageView imageView;
 
-    private Button btnOCR;
+    //private Button btnOCR;
     private ImageButton btnP;
 
 
@@ -38,8 +38,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ImageButton home = (ImageButton) findViewById(R.id.home);
-        ImageButton stats = (ImageButton) findViewById(R.id.stats);
-        ImageButton rec = (ImageButton) findViewById(R.id.rec);
         ImageButton cam = (ImageButton) findViewById(R.id.cam);
         ImageButton notif = (ImageButton) findViewById(R.id.notif);
         ImageButton setting = (ImageButton) findViewById(R.id.setting);
@@ -51,19 +49,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        stats.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openStats();
-            }
-        });
-
-        rec.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openRec();
-            }
-        });
 
         notif.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -95,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        btnOCR = findViewById(R.id.btnOCR);
+       /*N btnOCR = findViewById(R.id.btnOCR);
         btnOCR.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -103,6 +88,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        */
 
         btnP = findViewById(R.id.btnProfile);
         btnP.setOnClickListener(new View.OnClickListener() {
@@ -132,15 +118,6 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void openStats(){
-        Intent intent = new Intent (this, StatsActivity.class);
-        startActivity(intent);
-    }
-
-    public void openRec(){
-        Intent intent = new Intent (this, RecordsActivity.class);
-        startActivity(intent);
-    }
 
     public void openNotif(){
         Intent intent = new Intent (this, NotifcationActivity.class);
