@@ -30,7 +30,7 @@ import java.util.ArrayList;
 import java.util.List;
 public class NotifcationActivity extends AppCompatActivity {
 
-    //private final String channel_ID = "Notification";
+    //private final String CHANNEL_ID = "Notification";
     //private final int notification_ID = 001;
 
 
@@ -84,16 +84,16 @@ public class NotifcationActivity extends AppCompatActivity {
         });
 
 
-        Button enableNotif = (Button) findViewById(R.id.enableNotif);
+       /* Button enableNotif = (Button) findViewById(R.id.enableNotif);
         enableNotif.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //enableNotifications();
+                //nableNotifications();
             }
         });
+        */
 
     }
-
 
 
     public void startTextRecognitionActivity() {
@@ -122,6 +122,7 @@ public class NotifcationActivity extends AppCompatActivity {
         Intent intent = new Intent (this, SettingActivity.class);
         startActivity(intent);
     }
+
 
 
 }
