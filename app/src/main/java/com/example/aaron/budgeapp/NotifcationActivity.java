@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.BitmapFactory;
 import android.media.Image;
+import android.net.Uri;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -84,16 +85,17 @@ public class NotifcationActivity extends AppCompatActivity {
         });
 
 
-       /* Button enableNotif = (Button) findViewById(R.id.enableNotif);
-        enableNotif.setOnClickListener(new View.OnClickListener() {
+        Button collectPrize = (Button) findViewById(R.id.collectPrize);
+        collectPrize.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //nableNotifications();
+                //collect();
             }
         });
-        */
+
 
     }
+
 
 
     public void startTextRecognitionActivity() {

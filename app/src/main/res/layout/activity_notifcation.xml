@@ -6,6 +6,80 @@
     android:layout_height="match_parent"
     tools:context=".NotifcationActivity">
 
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="264dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Achievements"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="451dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="192dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/colorPrimaryDark" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="451dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="304dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/colorPrimaryDark" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="440dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="184dp"
+        app:layout_constraintTop_toTopOf="@+id/imageView10"
+        app:srcCompat="@color/black"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:id="@+id/imageView29"
+        android:layout_width="39dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView16"
+        app:srcCompat="@drawable/budgelogo" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="451dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="128dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/colorPrimaryDark" />
+
     <ImageButton
         android:id="@+id/notif4"
         android:layout_width="wrap_content"
@@ -99,7 +173,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="Notifications"
@@ -107,20 +181,250 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.035"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="451dp"
-        android:layout_height="88dp"
-        android:layout_marginTop="84dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="64dp"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.97"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="242dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="You've Reached 80% of your Budget"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        app:layout_constraintBottom_toTopOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="155dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Budget succesfully met!"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="349dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="You have spent more than your expected budget"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="@+id/imageView8"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.485" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="415dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="340dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView10"
+        app:srcCompat="@color/black" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="440dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toTopOf="@+id/imageView10"
+        app:srcCompat="@color/black"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="440dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintTop_toTopOf="@+id/imageView10"
+        app:srcCompat="@color/black"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="440dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="124dp"
+        app:layout_constraintTop_toTopOf="@+id/imageView10"
+        app:srcCompat="@color/black"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="39dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView16"
+        app:srcCompat="@drawable/budgelogo" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="228dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Create a budget of $20 and stay within budget of that period"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView16" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="224dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Do not spend 60% of your budget on food or entertainment"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        app:layout_constraintStart_toStartOf="@+id/imageView17"
+        app:layout_constraintTop_toTopOf="@+id/imageView17" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="212dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:text="Complete 4 consecutive budgets"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView18" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:text="Finish budget with 15% left to spare"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView21" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="39dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView16"
+        app:srcCompat="@drawable/budgelogo" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="39dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView16"
+        app:srcCompat="@drawable/budgelogo" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="440dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintTop_toTopOf="@+id/imageView10"
+        app:srcCompat="@color/black"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="39dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginRight="104dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView16"
+        app:srcCompat="@drawable/budgelogo" />
+
+    <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="39dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView16"
+        app:srcCompat="@drawable/budgelogo" />
+
+    <ImageView
+        android:id="@+id/imageView30"
+        android:layout_width="39dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView16"
+        app:srcCompat="@drawable/budgelogo" />
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="39dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView16"
+        app:srcCompat="@drawable/budgelogo" />
+
+    <Button
+        android:id="@+id/collectPrize"
+        android:layout_width="159dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Collect Prize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView23" />
 
 </android.support.constraint.ConstraintLayout>
