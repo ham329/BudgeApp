@@ -1,7 +1,6 @@
 package com.example.aaron.budgeapp;
 
 import android.content.Intent;
-import android.media.Image;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -36,55 +35,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        ImageButton home = (ImageButton) findViewById(R.id.home);
-        ImageButton stats = (ImageButton) findViewById(R.id.stats);
-        ImageButton rec = (ImageButton) findViewById(R.id.rec);
-        ImageButton cam = (ImageButton) findViewById(R.id.cam);
-        ImageButton notif = (ImageButton) findViewById(R.id.notif);
-        ImageButton setting = (ImageButton) findViewById(R.id.setting);
-
-        home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openHome();
-            }
-        });
-
-        stats.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openStats();
-            }
-        });
-
-        rec.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openRec();
-            }
-        });
-
-        notif.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openNotif();
-            }
-        });
-
-        cam.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startTextRecognitionActivity();
-            }
-        });
-
-        setting.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openSetting();
-            }
-        });
 
         btnP = findViewById(R.id.btnProfile);
         btnP.setOnClickListener(new View.OnClickListener() {
@@ -127,29 +77,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void openHome(){
-        Intent intent = new Intent (this, MainActivity.class);
-        startActivity(intent);
-    }
 
-    public void openStats(){
-        Intent intent = new Intent (this, StatsActivity.class);
-        startActivity(intent);
-    }
 
-    public void openRec(){
-        Intent intent = new Intent (this, RecordsActivity.class);
-        startActivity(intent);
-    }
 
-    public void openNotif(){
-        Intent intent = new Intent (this, NotifcationActivity.class);
-        startActivity(intent);
-    }
-
-    public void openSetting(){
-        Intent intent = new Intent (this, SettingActivity.class);
-        startActivity(intent);
-    }
 
 }
