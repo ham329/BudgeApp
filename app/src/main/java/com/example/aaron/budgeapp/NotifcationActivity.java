@@ -2,13 +2,16 @@ package com.example.aaron.budgeapp;
 
 import android.app.NotificationManager;
 import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
+import android.graphics.BitmapFactory;
 import android.media.Image;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.NotificationCompat;
+import android.support.v4.app.NotificationManagerCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -27,11 +30,15 @@ import java.util.ArrayList;
 import java.util.List;
 public class NotifcationActivity extends AppCompatActivity {
 
+    //private final String channel_ID = "Notification";
+    //private final int notification_ID = 001;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notifcation);
+
 
 
         ImageButton home4 = (ImageButton) findViewById(R.id.home4);
@@ -77,7 +84,17 @@ public class NotifcationActivity extends AppCompatActivity {
         });
 
 
+        Button enableNotif = (Button) findViewById(R.id.enableNotif);
+        enableNotif.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //enableNotifications();
+            }
+        });
+
     }
+
+
 
     public void startTextRecognitionActivity() {
         Intent intent = new Intent(this, TextRecognitionActivity.class);

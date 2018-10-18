@@ -93,4 +93,12 @@
         app:layout_constraintVertical_bias="0.99"
         app:srcCompat="@drawable/ic_settings_black_24dp" />
 
+    <Button
+        android:id="@+id/enableNotif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="enable notif"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="100dp" />
+
 </android.support.constraint.ConstraintLayout>
